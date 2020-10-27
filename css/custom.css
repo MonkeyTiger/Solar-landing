@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Questrial";
+  src: url("../fonts/Questrial-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("../fonts/PatrickHandSC-Regular.ttf") format("ttf");
+}
+
+body input:focus, body button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=custom.css.map */
