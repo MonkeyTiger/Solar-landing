@@ -12,7 +12,7 @@ body {
     width: 100%;
     min-height: 70px;
     color: #000;
-    background: #F3BE42;
+    background: $mainColor;
     padding: 0 20px;
     font-size: 24px;
     line-height: 32px;
@@ -102,7 +102,7 @@ body {
       flex-direction: column;
       align-items: center;
       .enter-text {
-        color: #F3BE42;
+        color: $mainColor;
         margin-bottom: 0;
         text-align: center;
         font: {
@@ -142,6 +142,260 @@ body {
         border-radius: 20px;
         border: none;
         font-size: 24px;
+      }
+    }
+  }
+  .live-link {
+    background: #111111;
+    width: 100%;
+    min-height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #FFF;
+    div {
+      margin-right: 20px;
+    }
+    img {
+      margin: 0 15px;
+    }
+  }
+  .section-1 {
+    background: $mainColor;
+    width: 100%;
+    padding: 20px;
+    min-height: 141px;
+    p {
+      text-align: center;
+    }
+    p:first-child {
+      font-size: 48px;
+      line-height: 49px;
+      margin-bottom: 9px;
+    }
+    p:last-child {
+      font-size: 28px;
+      line-height: 29px;
+      margin-bottom: 0;
+    }
+  }
+  .section-2 {
+    &>div>div {
+      padding: 0;
+      .bg {
+        width: 100%;
+      }
+    }
+  }
+  .section-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #111111;
+    padding: 74px 0 50px 0;
+    .title {
+      font-size: 48px;
+      line-height: 49px;
+      margin-bottom: 30px;
+      color: #FFF;
+      text-align: center;
+      span {
+        color: $mainColor;
+      }
+    }
+    video {
+      margin-bottom: 48px;
+    }
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button {
+        max-width: 430px;
+        width: 100%;
+        height: 57px;
+        font-size: 24px;
+        background: $mainColor;
+        border-radius: 20px;
+        border: none;
+        margin-bottom: 16px;
+      }
+      a {
+        font-size: 24px;
+        font-family: $Patrick;
+        color: #FFFFFF;
+        text-decoration: underline;
+      }
+    }
+  }
+  .section-4 {
+    background: $mainColor;
+    padding: 81px 140px 53px;
+    .title {
+      font-size: 48px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    .descr {
+      font-size: 28px;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 28px;
+      }
+    }
+  }
+  .section-5 {
+    img {
+      width: 100%;
+      padding: 50px 0;
+    }
+  }
+  .section-6 {
+    background: #4C14A4;
+    padding: 67px 200px 0;
+    .title {
+      font: {
+        size: 48;
+        weight: bold;
+        family: $Poppins;
+      }
+      line-height: 62px;
+      color: white;
+      margin-bottom: 0;
+    }
+    .descr {
+      font: {
+        family: $Poppins;
+        size: 18px;
+      }
+      margin-bottom: 30px;
+      color: #FFF;
+    }
+    ul {
+      padding-left: 0;
+      li {
+        list-style-type: none;
+        color: #FFF;
+        margin-bottom: 26px;
+        font: {
+          family: $Poppins;
+          size: 26px;
+        }
+      }
+    }
+    button {
+      max-width: 430px;
+      width: 100%;
+      height: 65px;
+      color: #FFF;
+      background: #1FB256;
+      border-radius: 20px;
+      border: none;
+      font: {
+        size: 24px;
+        weight: bold;
+        family: $Poppins;
+      }
+    }
+  }
+  .section-7 {
+    padding: 69px 0 0;
+    p {
+      padding: 0 20px;
+      font-size: 48px;
+      margin-bottom: 42px;
+      line-height: 49px;
+      text-align: center;
+      span {
+        color: $mainColor;
+      }
+    }
+    video {
+      width: 100%;
+    }
+  }
+  .section-8 {
+    padding: 135px 140px;
+    background: $mainColor;
+    .div1 {
+      display: flex;
+      align-items: center;
+      .title {
+        font-size: 56px;
+        line-height: 58px;
+      }
+      .descr {
+        font-size: 26px;
+        margin-bottom: 32px;
+      }
+      button {
+        background: #33BA39;
+        height: 76px;
+        max-width: 485px;
+        width: 100%;
+        font-size: 28px;
+        border-radius: 20px;
+        color: #FFF;
+        border: none;
+      }
+    }
+  }
+  .section-9 {
+    .div2 {
+      padding: 0 103px;
+      background: #4C14A4;
+      display: flex;
+      align-items: center;
+      font-size: 32px;
+      color: white;
+    }
+  }
+  .section-10 {
+    width: 100%;
+    min-height: 126px;
+    background: #111111;
+    padding: 35px 0px;
+    display: flex;
+    .div1 {
+      .title {
+        font-size: 32px;
+        margin-bottom: 0;
+        span {
+          color: $mainColor;
+        }
+      }
+    }
+    .div2 {
+      input {
+        width: 437px;
+        height: 57px;
+        background: #FFF;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 24px;
+        border-radius: 30px / 20px;
+        border: 2px solid #707070;
+        text-align: center;
+        margin-left: 64px;
+        margin-right: 20px;
+      }
+      button {
+        width: 305px;
+        height: 57px;
+        color: #FFF;
+        background: $mainColor;
+        font-size: 24px;
+        border-radius: 20px;
+        border: none;
       }
     }
   }
