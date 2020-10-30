@@ -1,11 +1,17 @@
 @font-face {
   font-family: "Questrial";
-  src: url("../fonts/Questrial-Regular.ttf") format("ttf");
+  src: url("../fonts/font_questrial_Questrial-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Patrick Hand";
-  src: url("../fonts/PatrickHandSC-Regular.ttf") format("ttf");
+  src: url("../fonts/patrick-hand-v14-latin-regular.woff") format("woff"), url("../fonts/patrick-hand-v14-latin-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body input:focus, body button:focus {
@@ -127,6 +133,7 @@ body .banner {
   width: 100%;
   min-height: 786px;
   background: url("../imgs/banner_bg.jpg");
+  background-position: center;
   background-size: cover;
   padding: 52px 20px 42px;
 }
@@ -149,12 +156,16 @@ body .banner .heading-text .heading {
   font-size: 64px;
   line-height: 85px;
   margin-bottom: 0;
+  color: #FFF;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.64);
 }
 
 body .banner .heading-text .descr {
   text-align: center;
   font-size: 28px;
   line-height: 37px;
+  color: #FFF;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.64);
 }
 
 body .banner .form {
@@ -231,6 +242,12 @@ body .live-link {
 
 body .live-link div {
   margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .live-link img {
@@ -260,12 +277,75 @@ body .section-1 p:last-child {
   margin-bottom: 0;
 }
 
-body .section-2 > div > div {
-  padding: 0;
+body .section-2 .roof {
+  background: url("../imgs/bg/1.jpg");
+  background-position: center;
 }
 
-body .section-2 > div > div .bg {
+body .section-2 .garden {
+  background: url("../imgs/bg/2.jpg");
+  background-position: center;
+}
+
+body .section-2 .row > div {
+  min-height: 500px !important;
+}
+
+body .section-2 .content {
+  padding: 80px 57px 45px 140px;
+}
+
+body .section-2 .content .title {
+  font-size: 48px;
+  line-height: 50px;
+}
+
+body .section-2 .content .title .warning {
+  color: #F3BE42;
+}
+
+body .section-2 .content .descr {
+  font-size: 24px;
+  line-height: 25px;
+}
+
+body .section-2 .content ul {
+  padding-left: 0;
+}
+
+body .section-2 .content ul li {
+  margin-bottom: 49px;
+  letter-spacing: -1px;
+  list-style-type: none;
+  font-size: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .section-2 .content ul li img {
+  margin-right: 16px;
+}
+
+body .section-2 .content button {
+  border: none;
+  max-width: 431px;
   width: 100%;
+  height: 57px;
+  border-radius: 20px;
+  font-size: 24px;
+}
+
+body .section-2 .content .unlock {
+  background: #F3BE42;
+}
+
+body .section-2 .content .button-green {
+  background: #33BA39;
+  color: #FFF;
 }
 
 body .section-3 {
@@ -297,6 +377,8 @@ body .section-3 .title span {
 
 body .section-3 video {
   margin-bottom: 48px;
+  max-width: 1074px;
+  width: 100%;
 }
 
 body .section-3 .button-group {
@@ -368,14 +450,85 @@ body .section-4 .item p {
   font-size: 28px;
 }
 
-body .section-5 img {
+body .section-5 {
+  padding: 50px;
+  text-align: center;
+}
+
+body .section-5 .preview-img {
+  max-width: 450px;
   width: 100%;
-  padding: 50px 0;
+}
+
+body .section-5 > .title {
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .section-5 > .title a {
+  color: black !important;
+}
+
+body .section-5 > .title span {
+  color: #006CC5;
+}
+
+body .section-5 a {
+  color: black !important;
+}
+
+body .section-5 .review-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-5 .review-group .review {
+  padding: 0 30px;
+  text-align: left;
+}
+
+body .section-5 .review-group .review a {
+  color: black;
+}
+
+body .section-5 .review-group .review .title {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+
+body .section-5 .review-group .review .tip {
+  color: grey;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+body .section-5 .review-group .review .descr {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 body .section-6 {
   background: #4C14A4;
   padding: 67px 200px 0;
+}
+
+body .section-6 .power {
+  width: 100%;
 }
 
 body .section-6 .title {
@@ -407,6 +560,7 @@ body .section-6 ul li {
 }
 
 body .section-6 button {
+  margin-bottom: 90px;
   max-width: 430px;
   width: 100%;
   height: 65px;
@@ -474,9 +628,34 @@ body .section-8 .div1 button {
   border: none;
 }
 
+body .section-8 .div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .section-8 .div2 img {
+  max-width: 900px;
+  width: 100%;
+}
+
+body .section-9 .div1 {
+  min-height: 650px;
+  background: url("../imgs/bg-2.png");
+  background-size: cover;
+  background-position: center;
+}
+
 body .section-9 .div2 {
-  padding: 0 103px;
+  padding: 250px 103px;
   background: #4C14A4;
+  font-family: "Patrick Hand" !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,17 +666,23 @@ body .section-9 .div2 {
   color: white;
 }
 
+body .section-9 .div2 b {
+  font-weight: 900;
+  font-size: 35px;
+}
+
 body .section-10 {
   width: 100%;
   min-height: 126px;
   background: #111111;
-  padding: 35px 0px;
+  padding: 35px 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 body .section-10 .div1 .title {
+  color: white;
   font-size: 32px;
   margin-bottom: 0;
 }
@@ -527,6 +712,119 @@ body .section-10 .div2 button {
   font-size: 24px;
   border-radius: 20px;
   border: none;
+}
+
+body .section-11 {
+  padding: 78px 208px 66px;
+}
+
+body .section-11 .heading {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 76px;
+}
+
+body .section-11 .item {
+  margin-bottom: 18px;
+}
+
+body .section-11 .item .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+  color: #F3BE42;
+  line-height: 33px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 13px;
+}
+
+body .section-11 .item .title img {
+  margin-top: 5px;
+  margin-right: 24px;
+}
+
+body .section-11 .item .descr {
+  font-size: 24px;
+  line-height: 25px;
+}
+
+body .section-11 button {
+  margin-top: 40px;
+  margin-bottom: 26px;
+  max-width: 485px;
+  width: 100%;
+  line-height: 25px;
+  height: 76px;
+  background: #BA3333;
+  border-radius: 20px;
+  color: #FFF;
+  border: none;
+  font-size: 28px;
+}
+
+body .section-11 a {
+  text-decoration: underline;
+  color: #1727E5;
+  font-size: 34px;
+  text-align: center;
+}
+
+body .footer {
+  background: #232323;
+  padding: 60px 222px 50px;
+  color: #FFF;
+}
+
+body .footer .contact, body .footer .sitemap {
+  margin-bottom: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body .footer .contact .title, body .footer .sitemap .title {
+  font-size: 20px;
+}
+
+body .footer .contact p, body .footer .sitemap p {
+  margin-bottom: 8px;
+}
+
+body .footer .contact .grey, body .footer .sitemap .grey {
+  color: grey;
+}
+
+body .footer .sitemap {
+  width: 419px;
+}
+
+body .footer .comment {
+  text-align: center;
+  margin-top: 50px !important;
+}
+
+body .copy-right {
+  background: #232323;
+  border-top: 2px solid #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .copy-right p {
+  margin-bottom: 0;
+  text-align: center;
 }
 
 #sidebar.active {
@@ -651,6 +949,27 @@ body .section-10 .div2 button {
   body header {
     padding: 0 20px;
   }
+  body .section-10 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .section-10 .div1 .title {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+  body .section-10 .div2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .section-10 .div2 input {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1550px) {
@@ -667,11 +986,98 @@ body .section-10 .div2 button {
   body header .menu-button {
     display: inline;
   }
+  body .live-link div {
+    margin-right: 0px;
+  }
+  body .section-2 .content {
+    padding: 20px;
+  }
+  body .section-2 .content ul li {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  body .section-4, body .section-5, body .section-6, body .section-10, body .section-11, body .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body .section-8 {
+    padding: 50px 20px;
+  }
+  body .section-8 .div1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .section-8 .div1 > div {
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .order1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .order2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .order3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .order4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
 }
 
 @media (max-width: 900px) {
   header {
     padding: 0 20px !important;
+  }
+  .section-2 ul li img {
+    width: 30px;
+    height: 30px;
+  }
+  .section-5 .review-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-5 .review-group .review {
+    margin-bottom: 30px;
+  }
+  .section-9 .div2 {
+    padding: 20px !important;
+  }
+  .section-10 .div2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-10 .div2 button, .section-10 .div2 input {
+    margin-bottom: 10px;
+    max-width: 430px !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .section-11 .heading {
+    line-height: 55px;
   }
 }
 
@@ -683,9 +1089,51 @@ body .section-10 .div2 button {
   body header .logo img:last-child {
     display: none;
   }
+  body .banner {
+    min-height: 400px !important;
+  }
   body .banner .heading-text .heading {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 38px !important;
+    line-height: 36px !important;
+  }
+  body .banner .heading-text .descr {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  body .section-2 .content .title {
+    text-align: center;
+    font-size: 40px !important;
+    line-height: 42px !important;
+  }
+  body .section-4 .title {
+    font-size: 40px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px;
+  }
+  body .section-5 .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .section-6 .title {
+    font-size: 40px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px;
+  }
+  body .section-7 .title {
+    font-size: 40px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px;
+  }
+  body .section-8 .title {
+    font-size: 40px !important;
+    line-height: 42px !important;
+  }
+  body .section-11 .heading {
+    font-size: 40px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */
